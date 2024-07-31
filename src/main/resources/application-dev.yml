@@ -1,0 +1,17 @@
+application:
+  name: ToDoList
+
+spring:
+  datasource: # not optional
+    url: jdbc:h2:mem:todo_db
+    driver-class-name: org.h2.Driver
+    username: dev-db
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect # not optional
+    show-sql: true # optional
+    hibernate: # optional
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
