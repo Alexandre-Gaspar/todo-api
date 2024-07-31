@@ -3,7 +3,7 @@ application:
 
 spring:
   datasource: # not optional
-    url: jdbc:h2:mem:todo_db
+    url: jdbc:h2:mem:db_todo
     driver-class-name: org.h2.Driver
     username: dev-db
     password:
