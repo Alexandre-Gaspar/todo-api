@@ -28,9 +28,8 @@ public class UserService {
     }
 
     public String hashPassword(String password) {
-        String hashedPassword = BCrypt.withDefaults()
+        return BCrypt.withDefaults()
                 .hashToString(12, password.toCharArray());
-        return hashedPassword;
     }
 
     private void validateUser(UserModel userToCreate) {
