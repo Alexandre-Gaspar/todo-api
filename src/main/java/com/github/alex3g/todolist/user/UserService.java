@@ -33,13 +33,13 @@ public class UserService {
     }
 
     private void validateUser(UserModel userToCreate) {
-        if (userToCreate.getUsername() == null || userToCreate.getUsername().isEmpty()) { // throw IllegalArgumentException if
+        if (userToCreate.getUsername() == null || userToCreate.getUsername().isEmpty()) {
             throw new InvalidUserException("Username field can't be null or empty.");
         }
-        if (userToCreate.getName() == null || userToCreate.getName().isEmpty()) { // throw IllegalArgumentException if
+        if (userToCreate.getName() == null || userToCreate.getName().isEmpty()) {
             throw new InvalidUserException("Name field can't be null or empty.");
         }
-        if (userToCreate.getPassword() == null || userToCreate.getPassword().isEmpty()) { // throw IllegalArgumentException if
+        if (userToCreate.getPassword() == null || userToCreate.getPassword().isEmpty()) {
             throw new InvalidUserException("Password field can't be null or empty.");
         }
     }
